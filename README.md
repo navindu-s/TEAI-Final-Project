@@ -1,6 +1,6 @@
 # TEAI Platform
 
-Industrial control-room dashboard + FastAPI backend for an IoT + AI tea-processing pipeline.
+Industrial control-room dashboard + FastAPI backend for an IoT + AI tea-processing.
 
 ```
 New TEAI/
