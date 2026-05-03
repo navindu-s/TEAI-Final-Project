@@ -1,0 +1,35 @@
+# Mac OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# Frontend / Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Machine Learning Models (Uncomment if you want to ignore large model files)
+# backend/models/*.pth
+# backend/models/*.keras
+# backend/models/*.h5
+# backend/models/*.pt
+# backend/models/*.bin

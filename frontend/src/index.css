@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-700;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-zinc-800 bg-zinc-900/60 backdrop-blur-sm;
+  }
+  .panel-header {
+    @apply flex items-center justify-between border-b border-zinc-800 px-4 py-2.5;
+  }
+  .panel-title {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-zinc-400;
+  }
+  .stat-value {
+    @apply font-mono text-2xl font-semibold tabular-nums text-zinc-100;
+  }
+  .label-xs {
+    @apply text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500;
+  }
+  .scanline-overlay {
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+  .belt-pattern {
+    background-image: repeating-linear-gradient(
+      90deg,
+      #27272a 0,
+      #27272a 16px,
+      #18181b 16px,
+      #18181b 24px,
+      #27272a 24px,
+      #27272a 40px
+    );
+  }
+}

@@ -1,0 +1,19 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+pillow
+numpy
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+
+# Choose what you actually need based on your model formats:
+torch
+torchvision
+ultralytics           # YOLOv8
+tensorflow            # Keras .h5 / .keras
+scikit-learn
+joblib
+
+# Optional — for ESP32 over USB serial:
+pyserial
